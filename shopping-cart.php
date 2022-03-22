@@ -8,7 +8,7 @@ $products_data = FileUtility::openCSV('products.csv');
 
 $products = Product::convertArrayToProducts($products_data);
 
-$customer = new Customer('John Doe', 'john@mail.com');
+$customer = new Customer('Kirsten Pearl', 'ten@mail.com');
 
 $shoppingCart = new ShoppingCart($customer);
 $shoppingCartItems = $shoppingCart->getAllItems();
